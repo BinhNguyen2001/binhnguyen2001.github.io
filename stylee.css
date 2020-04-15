@@ -1,0 +1,25 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.plant-details {
+    width: 80rem;
+    height: 60rem;
+    background-color: #aedba5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+.plant-details__container {
+    background-color: #fff;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.05);
+}
+.plant-details__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
