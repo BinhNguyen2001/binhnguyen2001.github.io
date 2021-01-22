@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	#more {
+		display: none;
+	}
+</style>
+<body>
+	<div id="description"></div>
+	<button onclick="myFunction()" id="myBtn">Read more</button>
+</body>
+<script>
+	let paragraph = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iusto itaque non autem quia sed perferendis odio. Dolor id quibusdam, ad natus beatae? Quibusdam necessitatibus consequatur id aut accusantium error laborum doloremque impedit quos non aliquid harum ullam dolore ad ex earum ducimus, nemo placeat culpa officiis, pariatur reiciendis repudiandae adipisci, eligendi magnam! Odio, corporis ipsam autem ducimus ex quos facere quisquam, nisi quidem libero suscipit accusantium. Cum provident ad, neque earum quaerat fugit, obcaecati dignissimos, quas in accusantium, adipisci rerum corrupti repudiandae voluptatem quidem dolorum debitis ea ullam error repellendus quibusdam. Ab corrupti voluptatem saepe molestias debitis, consequuntur. Adipisci repudiandae, voluptas, animi suscipit incidunt sequi repellendus quisquam facere, natus hic rerum illo earum ab quia. Adipisci vero ad magni quibusdam recusandae dolorum impedit quo ducimus praesentium minus deleniti facere reprehenderit blanditiis iure eveniet veniam, illo. Recusandae ipsam cupiditate animi aliquid, porro adipisci quo consectetur repellendus necessitatibus nostrum accusantium corrupti, veniam, commodi ex sed numquam. Dolor nostrum nisi saepe sunt aliquam laboriosam voluptatibus id fugit, sapiente corrupti quaerat vero sequi molestias, nam ut veritatis facilis ipsa ducimus explicabo laborum modi voluptates excepturi consequatur. Unde magni laudantium aut, minus placeat natus, obcaecati fuga accusamus expedita maiores, possimus sunt magnam exercitationem sint.";
+	
+	let des = document.getElementById('description');
+	des.innerHTML = `${paragraph.slice(0,800)}<span id="dots">...</span><span id="more">${paragraph.slice(800, paragraph.length)}</span>`;
+	let more = document.getElementById('more');
+	myFunction = () => {
+	  var dots = document.getElementById("dots");
+	  var moreText = document.getElementById("more");
+	  var btnText = document.getElementById("myBtn");
+	  if (dots.style.display === "none") {
+	    dots.style.display = "inline";
+	    btnText.innerHTML = "Read more";
+	    moreText.style.display = "none";
+	  } else {
+	    dots.style.display = "none";
+	    btnText.innerHTML = "Read less";
+	    moreText.style.display = "inline";
+	  }
+	}
+</script>
+</html>
