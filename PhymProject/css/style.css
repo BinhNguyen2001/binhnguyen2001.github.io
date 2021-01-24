@@ -1,0 +1,127 @@
+.header {
+  font-size: 30px;
+  height: 7rem;
+  display: flex;
+  background-color: #000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem; }
+  .header .navbar {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center; }
+    .header .navbar .home {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      margin-right: 1rem;
+      padding-left: 2rem; }
+      .header .navbar .home a {
+        display: flex;
+        align-items: center; }
+      .header .navbar .home .home_logo {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 1rem; }
+      .header .navbar .home .home_title {
+        font-size: 1.7rem;
+        color: #fff; }
+    .header .navbar ul.main-menu {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      color: #fff; }
+      .header .navbar ul.main-menu li {
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        width: 170px;
+        height: 100%;
+        justify-content: center; }
+        .header .navbar ul.main-menu li:hover {
+          background-color: #e55b2c; }
+    .header .navbar .user {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .header .navbar .user .user_ava {
+        margin-right: 1rem; }
+        .header .navbar .user .user_ava img {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%; }
+      .header .navbar .user .user_name {
+        color: #fff; }
+      .header .navbar .user .user_menu {
+        margin-left: 1rem;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25); }
+        .header .navbar .user .user_menu i {
+          color: #fff;
+          position: relative; }
+        .header .navbar .user .user_menu ul {
+          background-color: #e55b2c;
+          position: absolute;
+          top: 7rem;
+          right: 21rem;
+          width: 300px;
+          display: none; }
+          .header .navbar .user .user_menu ul::before {
+            width: 0;
+            height: 0;
+            content: "";
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 17px solid #e55b2c;
+            position: absolute;
+            top: -17px;
+            right: 22px; }
+          .header .navbar .user .user_menu ul li {
+            padding: 1rem;
+            color: #fff;
+            text-align: center;
+            border-bottom: 1px solid #fff; }
+        .header .navbar .user .user_menu ul.select {
+          display: block; }
+  .header .search {
+    height: 50px;
+    background-color: #222;
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+    max-width: 300px; }
+    .header .search #sch {
+      width: 50px;
+      height: 100%;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      color: whitesmoke;
+      background-color: #222;
+      padding-left: 10px;
+      transition: 0.5s linear; }
+    .header .search button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 100%;
+      border-radius: 30px;
+      background-color: #222;
+      border: none;
+      cursor: pointer; }
+      .header .search button i {
+        color: #ff9b00; }
+    .header .search:hover #sch,
+    .header .search #sch:valid {
+      width: 300px;
+      padding-right: 50px; }
+    .header .search:hover button,
+    .header .search #sch:valid ~ button {
+      background-color: #eee;
+      transform: scale(0.9); }
+
+/*# sourceMappingURL=style.css.map */
